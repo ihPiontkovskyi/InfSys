@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="graph/vertex_info.js" charset="utf-8"></script>
+    <script src="graph/vertex.js" charset="utf-8"></script>
+    <script src="algorithms/a_star.js" charset="utf-8"></script>
+    <script src="algorithms/dijkstra.js" charset="utf-8"></script>
+    <script src="algorithms/bfs.js" charset="utf-8"></script>
+    <script src="algorithms/dfs.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+<header class="header"><h1 class="article">Pacman?</h1></header>
+<main>
+    <div class="game">
+        <div class="circle" id="circle"></div>
+        <!--        https://www.onlygfx.com/wp-content/uploads/2017/11/grunge-circle-frame-1-1024x982.png-->
+    </div>
+</main>
+<div class="menu-buttons">
+    <button class="btn-random" id="btn-random">Random generate positions</button>
+    <button class="btn-start" id="btn-start">Start</button>
+    <button class="btn-statistics" id="btn-statistics">Show Statistics</button>
+</div>
+
+<div class="modal-window" id="modal-window">
+    <div class="statistics-form" id="statistics-form">
+        <!--        <div class="bfs-stat">-->
+        <div class="statistics-title">
+            <h1>
+                Statistic information
+            </h1>
+        </div>
+        <div class="bfs-block">
+            <h2>
+                BFS algorithm
+            </h2>
+            <div class="bfs-info" id="bfs-info"></div>
+        </div>
+        <div class="dfs-block">
+            <h2>
+                DFS algorithm
+            </h2>
+            <div class="dfs-info" id="dfs-info">
+            </div>
+        </div>
+        <div class="a_star-block">
+            <h2>
+                A-algorithm
+            </h2>
+            <div class="a_star-info" id="a_star-info">
+
+            </div>
+        </div>
+        <div class="greedy-block">
+            <h2>
+                Greedy algorithm
+            </h2>
+            <div class="greedy-info" id="greedy-info">
+
+            </div>
+        </div>
+        <!--        </div>-->
+        <!--        <div class="dfs-stat"></div>-->
+    </div>
+</div>
+<!--MODAL WINDOW FOR CHOOSING ALGORITHMS--->
+<div class="modal-window-algorithms" id="modal-window-algorithms">
+    <div class="algorithms-block" id="algorithms-block">
+        <div class="block-bfs">
+            <button class="btn_bfs" id="btn_bfs">BFS</button>
+        </div>
+        <div class="block-dfs">
+            <button class="btn_dfs" id="btn_dfs">DFS</button>
+        </div>
+        <div class="block-a-star">
+            <button class="btn_a-star" id="btn_a-star">A*</button>
+        </div>
+        <div class="block-greedy">
+            <button class="btn_greedy" id="btn_greedy">GREEDY</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "ai-lab6-pacman-with-ghost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
